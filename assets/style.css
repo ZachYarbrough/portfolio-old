@@ -13,6 +13,7 @@
 }
 
 body {
+    color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,7 +32,7 @@ header {
 
 header h1 {
     font-size: 64px;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 5px 1% 5px 6%;
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -49,4 +50,90 @@ nav a {
     margin: 40px 10px;
     padding: 5px;
     border-bottom: 5px solid var(--secondary);
+}
+
+nav a:hover {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+
+.hero {
+    min-height: 300px;
+    background-size: cover;
+    background-image: url(images/run-buddy.jpg);
+}
+
+.hero h2{
+    width: 20%;
+    margin:;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container h2 {
+    flex: 0 0 20%;
+    font-size: 64px;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+    border-right: 5px solid var(--primary);
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project:first-child {
+    flex: 0 0 100%;
+    min-height: 400px;
+    min-width: 200px;
+}
+
+.project {
+    flex: 0 0 45%;
+    min-height: 100px;
+    min-width: 50px;
+    margin: 20px;
+    border: 5px solid;
+    background-size: 150%;
+    background-color: var(--primary);
+}
+
+.project div {
+    width: 20%;
+    text-align: end;
+    padding: 10px;
+    color: var(--tertiary);
+    background-color: var(--secondary);
+}
+
+#run-buddy {
+    background-image: url("images/run-buddy.jpg");
+}
+
+#contact div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 80%;
+}
+
+#contact div a {
+    font-size: 24px;
+    border-bottom: 5px solid var(--primary);
+    color: var(--primary);
+}
+
+#contact div a:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
 }
