@@ -31,8 +31,8 @@ header {
 }
 
 header h1 {
-    font-size: 64px;
-    margin: 5px 0;
+    font-size: 4vw;
+    line-height: 1;
     padding: 5px 1% 5px 6%;
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -41,12 +41,11 @@ header h1 {
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-right: 60px;
 }
 
 nav a {
-    font-size: 24px;
+    font-size: 1.4rem;
     margin: 40px 10px;
     padding: 5px;
     border-bottom: 5px solid var(--secondary);
@@ -58,19 +57,28 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8% 1% 1% 8%;
     background-size: cover;
     background-image: url(images/run-buddy.jpg);
 }
 
 .hero h2{
-    width: 20%;
-    margin:;
+    padding: 0 2%;
     color: var(--tertiary);
     background-color: var(--secondary);
 }
 
+.main-container {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -87,30 +95,31 @@ nav a:hover {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .project:first-child {
-    flex: 0 0 100%;
     min-height: 400px;
-    min-width: 200px;
+    flex-basis: 100%;
 }
 
 .project {
-    flex: 0 0 45%;
+    flex: 0 0 48%;
+    display: flex;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
     min-height: 100px;
     min-width: 50px;
-    margin: 20px;
     border: 5px solid;
     background-size: 150%;
     background-color: var(--primary);
 }
 
 .project div {
+    height: 20%;
     width: 20%;
-    text-align: end;
     padding: 10px;
+    overflow: auto;
     color: var(--tertiary);
     background-color: var(--secondary);
 }
@@ -136,4 +145,24 @@ nav a:hover {
 #contact div a:hover {
     color: var(--secondary);
     background-color: var(--primary);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }    
+    
+      nav {
+        justify-content: center;
+        margin: 0;
+      }
 }
