@@ -22,6 +22,8 @@ a {
     text-decoration: none;
 }
 
+/* Header Section */
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +58,8 @@ nav a:hover {
     background-color: var(--secondary);
 }
 
+/* Hero Section */
+
 .hero {
     display: flex;
     justify-content: flex-end;
@@ -70,6 +74,8 @@ nav a:hover {
     color: var(--tertiary);
     background-color: var(--secondary);
 }
+
+/* Main Container */
 
 .main-container {
     max-width: 88%;
@@ -93,6 +99,8 @@ nav a:hover {
     border-right: 5px solid var(--primary);
 }
 
+/* About Section */
+
 #about div {
     display: flex;
     justify-content: space-between;
@@ -111,6 +119,8 @@ nav a:hover {
     line-height: 1.5;
     margin: 10px;
 }
+
+/* Work Section */
 
 .project-container {
     display: flex;
@@ -169,6 +179,8 @@ nav a:hover {
 #digital-clock {
     background-image: url("images/digital-clock.jpg");
 }
+
+/* Contact Section */
 
 #contact div{
     display: flex;
