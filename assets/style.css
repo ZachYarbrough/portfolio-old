@@ -93,8 +93,21 @@ nav a:hover {
     border-right: 5px solid var(--primary);
 }
 
-#about p {
-    font-size: 1em;
+#about div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about div img {
+    width: 40%;
+    margin: 0 20px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+}
+
+#about div p {
+    align-self: center;
+    font-size: 1.4em;
     line-height: 1.5;
     margin: 10px;
 }
@@ -207,7 +220,20 @@ nav a:hover {
         padding: 5px;
         margin-bottom: 10px;
         font-size: 10vw;
-      }    
+      }   
+      
+      #about div {
+            flex-direction: column;
+            justify-content: center;
+      }
+
+      #about div img {
+          align-self: center;
+      }
+
+      #about div p {
+          text-align: center;
+      }
     
       nav {
         justify-content: center;
@@ -231,6 +257,10 @@ nav a:hover {
 }
 
 @media screen and (max-width: 620px) {
+    nav a {
+        font-size: 1rem;
+    }
+
     .project:first-child,
     .project {
       min-height: 100px;
