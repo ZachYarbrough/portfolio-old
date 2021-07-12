@@ -65,7 +65,7 @@ nav a:hover {
     justify-content: flex-end;
     padding: 20% 1% 1% 8%;
     background-size: cover;
-    background-image: url(images/hero-banner.jpg);
+    background-image: url(../images/hero-banner.jpg);
 }
 
 .hero h2{
@@ -99,6 +99,10 @@ nav a:hover {
     border-right: 5px solid var(--primary);
 }
 
+.container p span {
+    font-weight: bold;
+}
+
 /* About Section */
 
 #about div {
@@ -123,6 +127,7 @@ nav a:hover {
 /* Work Section */
 
 .project-container {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -165,19 +170,19 @@ nav a:hover {
 }
 
 #run-buddy {
-    background-image: url("images/run-buddy.jpg");
+    background-image: url("../images/run-buddy.jpg");
 }
 
 #robot-gladiator {
-    background-image: url("images/robot-gladiator.jpg");
+    background-image: url("../images/robot-gladiator.jpg");
 }
 
 #calculator {
-    background-image: url("images/calculator.jpg");
+    background-image: url("../images/calculator.jpg");
 }
 
 #digital-clock {
-    background-image: url("images/digital-clock.jpg");
+    background-image: url("../images/digital-clock.jpg");
 }
 
 /* Contact Section */
@@ -192,6 +197,7 @@ nav a:hover {
 
 #contact div a {
     font-size: 24px;
+    padding: 5px;
     margin: 5px;
     border-bottom: 5px solid var(--primary);
     color: var(--primary);
