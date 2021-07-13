@@ -12,6 +12,10 @@
     --light: rgba(238, 238, 247, 1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
