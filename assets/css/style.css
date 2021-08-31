@@ -192,6 +192,7 @@ nav a:hover {
 .project div {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: -5px;
     padding: 10px;
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -215,7 +216,7 @@ nav a:hover {
 }
 
 #password-generator {
-    background-image: url("../images/password-generator.png");
+    background-image: url("../images/weather-dashboard.jpg");
 }
 
 #taskinator {
@@ -232,7 +233,8 @@ nav a:hover {
     flex: 0 0 80%;
 }
 
-#contact div a {
+.contact-button,
+.view-more {
     text-decoration: none;
     padding: 5px 10px;
     color: var(--primary);
@@ -245,12 +247,13 @@ nav a:hover {
     font-size: 1.4rem;
 }
 
-#contact div a:hover {
+.contact-button:hover,
+.view-more:hover {
     background-size: 100% 100%;
     color: var(--secondary);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
     .container {
         flex-direction: column;
     }
