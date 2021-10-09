@@ -246,6 +246,7 @@ nav a:hover {
     overflow: scroll;
     border-radius: 10px;
   }
+
   .modal-content::-webkit-scrollbar {
     display: none;
     }
@@ -404,6 +405,10 @@ nav a:hover {
         min-height: 200px;
         flex-basis: 80%;
       }
+
+      .modal-content {
+        width: 80%;
+    }
 
       #contact div {
         flex-direction: column;
