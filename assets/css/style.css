@@ -242,7 +242,7 @@ nav a:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
-    height: 90%;
+    max-height: 90%;
     overflow: scroll;
     border-radius: 10px;
   }
